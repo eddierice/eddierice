@@ -1,0 +1,109 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', serif;
+    text-align: justify;
+    background-image: linear-gradient(to right top, #fbedda, #fceeda, #fdf0da, #fef1da, #fff3da);
+    /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
+#viewport {
+    height: 100vh;
+    width: 100vw;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header h1, #header h2 {
+    padding: 0;
+    margin: 0;
+    line-height: 1.25;
+    color: #1E1D1C;
+}
+
+#header h1 {
+    font-size: 3.5rem;
+}
+
+#header h2 {
+    margin-bottom: 10px;
+}
+
+#bio {
+    color: #1E1D1C;
+    text-transform: lowercase;
+    width: 85vw;
+    padding: 0px;
+    margin: 20px auto;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(90, 91, 95, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#bio p {
+    font-size: 0.95rem;
+    text-align: justify;
+    padding: 10px 20px;
+    line-height: 1.45;
+}
+
+#buttons {
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+#buttons button {
+    border-radius: 10px;
+    border: none;
+    padding: 20px 30px;
+    font-size: 2rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(90, 91, 95, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    color: #1E1D1C;
+}
+
+/* desktop */
+
+@media only screen and (min-width:1281px) {
+    #bio, #buttons {
+      width: 30vw;
+    }
+
+    #buttons button {
+        font-size: 3rem;
+        padding: 30px 40px;
+    }
+  }
+
+/* tablet */
+@media (min-width:600px)  {
+    #bio, #buttons {
+      width: 40vw;
+    }
+
+    #header h1 {
+        font-size: 6rem;
+    }
+
+    #header h2 {
+        font-size: 2rem;
+    }
+  }
